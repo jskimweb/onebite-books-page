@@ -1,3 +1,10 @@
+import SearchableLayout from "@/components/SearchableLayout";
+import { type ReactNode } from "react";
+
 export default function Home() {
-  return <h1>ONEBITE BOOKS</h1>;
+  return <>Home</>;
 }
+
+Home.getLayout = (page: ReactNode) => {
+  return <SearchableLayout>{page}</SearchableLayout>;
+};
